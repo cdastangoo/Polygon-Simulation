@@ -6,7 +6,7 @@ function run() {
 	var delay = 5;
 	var radius, t, xpos, ypos;
 	
-	var canvas = document.getElementById("myCanvas");
+	var canvas = document.getElementById("canvas");
 	var ctx = canvas.getContext("2d");
 	
 	radius = 200.0;
@@ -30,7 +30,7 @@ function run() {
 			ypos = canvas.height / 2 + parseInt(radius * Math.sin(t));
 			// set color
 			if (radius > 0.0) {
-				ctx.strokeStyle = "yellow";
+				ctx.strokeStyle = "#00FF00";
 			}
 			else {
 				ctx.strokeStyle = "red";
